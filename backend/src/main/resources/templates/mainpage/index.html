@@ -1,0 +1,23 @@
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>sentencEmoji</title>
+</head>
+<body>
+
+<div id="converter" class="form-group">
+    <mdb-input type="textarea" label="Outline textarea" outline :rows="3" />
+    <input v-model="textInput"
+           placeholder="Input"
+           @keyup.enter="convert"
+           class="form-control form-control-lg">
+    <button @click="convert">Convert</button>
+    <input v-model="textOutput"
+           placeholder="Output"
+           class="form-control form-control-lg">
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
