@@ -7,15 +7,15 @@
 <body>
 
 <div id="converter" class="form-group">
-    <mdb-input type="textarea" label="Outline textarea" outline :rows="3" />
-    <input v-model="textInput"
-           placeholder="Input"
+    <textarea v-model="textInput"
            @keyup.enter="convert"
-           class="form-control form-control-lg">
+           style="width:500px; height:300px; font-size: x-large" >
+    </textarea>
     <button @click="convert">Convert</button>
-    <input v-model="textOutput"
-           placeholder="Output"
-           class="form-control form-control-lg">
+    <textarea v-model="textOutput"
+              style="width:500px; height:300px; font-size: x-large"
+              disabled>
+    </textarea>
 </div>
 
 <script src="index.js"></script>

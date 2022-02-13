@@ -1,6 +1,4 @@
-import { mdbInput } from "mdbvue";
-
-Vue.use(mdbInput)
+import { mdbBtn, mdbInput } from 'mdbvue'
 
 var converter = new Vue({
     el: '#converter',
