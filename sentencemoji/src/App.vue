@@ -1,8 +1,10 @@
 <template>
+  <div id = "app">
   <Header></Header>
   <Introduction></Introduction>
   <converter />
   <Footer></Footer>
+  </div>
 </template>
 
 <script>
@@ -25,7 +27,8 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: -윤고딕320;
+  /*font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -33,20 +36,4 @@ export default {
   margin-top: 60px;
 }
 
-.header{
-  background-color: #ff6600;
-  position: fixed;
-  z-index: 999;
-  height: 55px;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.logo{
-  height: 55px;
-  top: 0;
-  left: 0;
-  right: 0;
-}
 </style>
