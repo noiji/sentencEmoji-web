@@ -1,5 +1,6 @@
 <template>
   <Header></Header>
+  <Home></Home>
   <Footer></Footer>
 </template>
 
@@ -28,10 +29,13 @@
 <script>
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Home from './views/Home'
+
 export default {
   components: {
     Footer,
-    Header
+    Header,
+    Home
   }
 }
 </script>
