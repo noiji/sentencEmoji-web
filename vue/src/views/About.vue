@@ -100,6 +100,7 @@ body{
 .aboutImage{
   width: auto;
   height: 70%;
+  op
 }
 .aboutText{
   padding: 5vh;
