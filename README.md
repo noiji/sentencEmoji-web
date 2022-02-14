@@ -1,5 +1,6 @@
 # sentencEmoji-web
-- sentencEmoji 모델을 서빙하는 웹페이지 (sentencEmoji 모델: https://github.com/noiji/sentencEmoji )
+- 한국어 텍스트 입력시 어울리는 이모지를 자동 삽입하여 출력해주는 서비스입니다.
+- 사용된 모델: KoELECTRA 기반 분류 모델 (https://github.com/noiji/sentencEmoji )
 
   - Backend: Spring Boot
   - Frontend: Vue
