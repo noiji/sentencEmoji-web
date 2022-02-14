@@ -28,24 +28,35 @@ export default {
   background-color: #ff6600;
   position: fixed;
   z-index: 999;
-  height: 55px;
+  height: 70px;
   top: 0;
   left: 0;
   right: 0;
 }
+
 .inner {
-  max-width: 800px;
+  max-width: 100%;
   box-sizing: border-box;
-  margin: 0px auto;
-  padding: 15px 5px;
+  /*margin: 0px auto;*/
+  /*padding: 15px 5px;*/
 }
 
+.inner router-link{
+  alignment: right;
+  font-size: 20px;
+  margin-left:3%;
+}
+.routers{
+  /*alignment: right;*/
+}
 .logo{
-  width: 24px;
+  width: 250px;
   margin-right: 10px;
   display: inline-block;
   vertical-align: middle;
+
 }
+
 @media (max-width: 860px) {
   .header .inner {
   padding: 15px 30px}

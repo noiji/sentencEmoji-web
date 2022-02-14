@@ -14,10 +14,10 @@ export default {
 
 <style>
 .intro{
-
+  margin-left: 5%;
+  margin-top: 7%;
+  margin-bottom: 2%;
   text-align: left;
-  padding-top: 10px;
-  padding-left: 100px;
 }
 .title{
   font-weight: bold;

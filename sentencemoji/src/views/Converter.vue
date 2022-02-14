@@ -1,5 +1,5 @@
 <template>
-  <div id="converter">
+  <container class="converter">
     <textarea class = "textInput"
               v-model="textInput"
               placeholder="Input"
@@ -14,7 +14,7 @@
               maxlength="500"
               readonly>
     </textarea>
-  </div>
+  </container>
 </template>
 
 <script>
@@ -37,14 +37,28 @@ export default {
 </script>
 
 <style>
+.converter{
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  align-items: center;
+}
 .textInput{
-  width:500px; height:300px; font-size: x-large
+  font-family: -윤고딕310;
+  width:40%;
+  height:300px; font-size: large;
+  margin-right: 2%;
 }
 .textOutput{
-  width:500px; height:300px; font-size: x-large
+  font-family: -윤고딕310;
+  width:40%;
+  height:300px; font-size: large;
+  margin-left: 2%;
 }
 .convert{
+  font-family: -윤고딕310;
   display: inline-block;
+  width: 10%;
   padding: 15px 25px;
   font-size: 20px;
   cursor: pointer;
