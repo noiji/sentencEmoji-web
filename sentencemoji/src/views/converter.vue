@@ -1,10 +1,12 @@
 <template>
+
   <html>
+
   <head>
-    <link rel="stylesheet" href="mainPage.css">
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<!--    <link rel="stylesheet" href="mainPage.css">-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
     <title>sentencEmoji</title>
-  </head>
+  </head>1
   <body>
 
   <div id="converter">
@@ -24,24 +26,28 @@
     </textarea>
   </div>
 
-  <script src="mainPage.js"></script>
+<!--  <script src="mainPage.js"></script>-->
   </body>
   </html>
 </template>
 
 <script>
+// import defaultLayout from 'sentencemoji/src/components/layouts/defaultLayout.vue'
+
 export default {
-  el: '#converter',
-  data: {
+  // el: '#converter',
+  data() {
+    return {
     textInput: '',
     textOutput: ''
+    }
   },
   methods: {
     convert: function () {
       this.textOutput = this.textInput + ' converted!'
     }
   },
-  layout: 'default'
+  // layout: 'defaultLayout'
 }
 </script>
 
