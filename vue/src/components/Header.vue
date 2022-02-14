@@ -8,13 +8,13 @@
             </router-link>
       </div>
       <div class = "right">
-      <router-link to="/about">소개</router-link>
-      <router-link to="/activity">활동</router-link>
-      <router-link to="/donate">함께해요</router-link>
+      <router-link to="/about" style="text-decoration: none;color: inherit; margin-left: 80px;">소개</router-link>
+      <router-link to="/activity" style="text-decoration: none; color: inherit; margin-left: 80px;">활동</router-link>
+      <router-link to="/donate" style="text-decoration: none; color: inherit; margin-left: 80px;">함께해요</router-link>
       <!--      <a class="github" href="https://github.com/vuejs/vue-hackernews-2.0" target="_blank" rel="noopener">-->
       <!--        Built with Vue.js-->
       <!--      </a>-->
-        <router-view></router-view>
+<!--        <router-view></router-view>-->
       </div>
 
     </nav>
@@ -46,16 +46,6 @@ export default {
   /*padding: 15px 5px;*/
 }
 
-.inner router-link{
-  color: #42b983;
-  font-family: -윤고딕320;
-  font-size: 20px;
-  font-weight: bold;
-  margin-left: 40px;
-}
-.routers{
-  /*alignment: right;*/
-}
 .logo{
   width: 300px;
   margin-right: 10px;
@@ -67,8 +57,11 @@ export default {
   float:left;
 }
 .right {
+  color: #42b983;
   float:right;
   margin-right: 5%;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media (max-width: 860px) {
