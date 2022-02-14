@@ -1,9 +1,9 @@
 <template>
+  <body>
   <Carousel class="carouselHome">
 <!--    <Slide v-for="slide in 3" :key="slide">-->
 <!--      <div class="carousel__item">{{ slide }}</div>-->
 <!--    </Slide>-->
-
     <Slide v-for="slide in 3" :key="slide">
       <div class="carousel__item">
         <slide>
@@ -17,17 +17,19 @@
       <Pagination />
     </template>
   </Carousel>
+  </body>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel';
-
+// import App from '../App.vue';
 import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
-  name: 'Basic',
+  name: 'Home',
   components: {
+    // App,
     Carousel,
     Slide,
     Pagination,
@@ -37,6 +39,11 @@ export default defineComponent({
 </script>
 
 <style>
+body{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
 .carouselHome{
   margin-top: 150px;
 }

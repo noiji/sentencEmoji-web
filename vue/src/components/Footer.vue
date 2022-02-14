@@ -19,15 +19,13 @@ export default {
 </script>
 
 <style>
+
 .footer{
-  /*text-align:center;*/
-  /*font-size:16px;*/
-  background-color: #42b983;
-  position: fixed;
-  /*z-index: 999;*/
-  height: 200px;
-  width: 100%;
-  bottom: 0;
+  display:flex;
+  background-color:#42b983;
+  height:15%;
+  margin-top:auto;
+  align-items:flex-end;
 }
 .info{
   float: left;

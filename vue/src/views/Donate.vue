@@ -11,5 +11,9 @@ export default {
 </script>
 
 <style scoped>
-
+body{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
 </style>

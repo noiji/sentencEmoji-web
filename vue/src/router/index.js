@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '@/views/Home.vue'
 import About from "@/views/About";
 import Activity from "@/views/Activity";
 import Donate from "@/views/Donate";
@@ -21,13 +21,14 @@ import Donate from "@/views/Donate";
 // ]
 
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', component: Home }, //찐 적용
   { path: '/about', component: About },
   { path: '/activity', component: Activity },
   { path: '/donate', component: Donate },
 ]
 
 const router = createRouter({
+  mode: "history",
   history: createWebHistory(process.env.BASE_URL),
   routes
 })
