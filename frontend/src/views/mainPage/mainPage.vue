@@ -40,7 +40,8 @@ export default {
     convert: function () {
       this.textOutput = this.textInput + ' converted!'
     }
-  }
+  },
+  layout: 'default'
 }
 </script>
 
