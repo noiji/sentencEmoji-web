@@ -1,0 +1,37 @@
+<template>
+  <Header></Header>
+  <Footer></Footer>
+</template>
+
+<style>
+#app {
+  font-family: -윤고딕320, "Segoe UI", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style>
+<script>
+import Header from './components/Header'
+import Footer from './components/Footer'
+export default {
+  components: {
+    Footer,
+    Header
+  }
+}
+</script>
